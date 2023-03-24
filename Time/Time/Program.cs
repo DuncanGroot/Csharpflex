@@ -4,9 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Current Date and Time is:");
-            DateTime now = DateTime.Now;
-            Console.WriteLine(now);
+            bool i = true;
+            while (i == true) 
+                {
+                DateTime now = DateTime.Now;
+                System.Threading.Thread.Sleep(1000);
+                Console.WriteLine("current date is: " + now);
+
+                }
         }
     }
 }
